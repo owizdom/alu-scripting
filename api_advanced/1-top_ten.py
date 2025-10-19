@@ -24,5 +24,6 @@ def top_ten(subreddit):
             
         HOT_POSTS = RESPONSE.json().get("data").get("children")
         [print(post.get('data').get('title')) for post in HOT_POSTS]
+        print("OK")
     except Exception:
         print("None")
